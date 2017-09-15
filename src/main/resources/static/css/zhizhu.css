@@ -1,0 +1,302 @@
+ #last-top{display: none;}
+ h2{margin:1.5em 0 0.5em;}
+/* .frist-tishi{text-align: center; margin: 10px auto 5px auto; color: #9370DB; font-size: 14px;}*/
+ .tishi{text-align: center; width:70% ;padding: 30px 10px; color: red;line-height: 20px; margin: auto;}
+ .navigation{
+	display: table;
+	width: 40%;
+    margin: 25px auto 15px auto;
+}
+ .navigation .li{
+	list-style-type: none;
+	display: table-cell;
+	height:30px ;
+	line-height: 30px;
+	text-align: center;
+	border-left: 1px solid  aquamarine;
+}
+ .navigation .li a{
+ 	color:#ff8247;
+ }
+
+
+/*  团队简介   */
+
+.second-all{
+	width: 76%;
+	margin: 5px auto 20px auto;
+	padding:30px 0 30px 0 ;
+	text-align: center;
+}
+.second-all:after{
+	 content: "";
+    clear: both;
+    display: block;
+}
+ .img{
+   width: 40%;
+   height: 500px;
+   margin-left: 5px;
+   float: left;
+}
+.content{
+	width: 52%;
+	float: left;
+	margin: 0px 10px 0px 20px;
+	font-size: 14px;
+}
+.content-p{
+	text-indent: 1em;
+	line-height: 21px;
+	padding-bottom: 5px;
+}
+.content-span{
+	font-size: 1.6em;
+	color: palevioletred
+}
+
+/* 培养方向  */
+@font-face {
+  font-family: 'iconfont';
+  src: url('iconfont.eot');
+  src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+  url('iconfont.woff') format('woff'),
+  url('iconfont.ttf') format('truetype'),
+  url('iconfont.svg#iconfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:50px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+i{
+color: mediumpurple;
+	opacity: 0.8;
+	border: 3px solid mediumpurple;;
+	border-radius: 50%;
+	padding: 15px;
+}
+
+.three-all{
+	width: 90%;
+	margin: 40px auto;
+}
+
+.three-all:after{
+	 content: "";
+    clear: both;
+    display: block;
+}
+.three-div{
+	width: 25%;
+	float: left;
+	text-align: center;
+    margin: 15px 0;
+	padding: 35px 5px;
+}
+.three-p{line-height: 20px;font-size: 14px;}
+.three-div a{color:  #404040;}
+.three-div:hover{
+	 -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* 报名表*/
+/*form{ width:30%;}*/
+
+.four-all{
+	width: 80%;
+	margin: 5px auto 20px auto;
+	padding:5px 0 30px 0 ;
+	/*padding: 10px;*/
+
+}
+.four-all:after{
+	 content: "";
+    clear: both;
+    display: block;
+}
+.four-form{
+	width: 50%;
+   margin: 10px auto;
+   /*border: 1px solid red;*/
+   float: left;
+}
+.four-form select{width: 45%;}
+.two-img{
+   width: 45%;
+   height: 450px;
+   margin-left: 5px;
+   float: left;
+}
+
+.form-text{
+	width:80%; 
+   height: 35px;
+   color: black;
+   padding-left: 5px; 
+   margin: 5px 0;
+ }
+#button{width: 80px;margin: 30px 10%;background: #6495ED;color: white;}
+#test{color: red;padding: 0px 40px; font-size: 14px;}
+
+@media only screen and (max-width: 768px) {
+  	.second-all{
+  		width: 85%;
+  	}
+  	.img{
+  		float: none;
+  		width: 400px;
+  		margin: 0;
+  		height: 450px;
+  	}
+  	.content{
+  		width: 100%;
+  		float: none;
+  		margin: 10px 0px;
+  	}
+  	
+  	.three-all{width: 85%; padding: 5px 0;margin: 20px auto;}
+  	.three-div{
+  		width: 100%;
+  		float: none;
+  		margin:10px;
+  		padding:25px 0;
+  		-webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+       -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+       box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  		}
+  		.three-p{font-size: 14px;}
+  	.three-div:hover{
+	 -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+       -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+       box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+    .four-all{
+  		width: 85%;
+  		background: url(../img/bd1.png) no-repeat;
+  		background-size:cover;
+  		padding: 5px 0 10px 0;
+  	}
+  	.two-img{
+  		float: none;
+  		display: none;
+  	}
+  	.four-form{
+  		width: 100%;
+  		float: none;
+  		margin:5px 15%;
+  	}
+  	.form-text{width: 60%;}
+  	form{font-size: 14px;}
+  	.four-form select{width: 30%;}
+  	.tishi{padding: 15px 0 0 0;margin: auto;}
+}
+
+@media only screen and (max-width: 600px) {
+	
+	#last-top{
+		display: block;
+		height: 120px;
+		background:  #FF8247;
+		opacity: 0.5;
+		color: white;
+		font-size: 2em;
+		line-height: 120px;
+		text-align: center;
+	}
+	iframe{display: none;}
+	.navigation{width: 80%;	}
+	
+	.img{
+		width: 300px;
+		height: 350px;
+	}
+	.iconfont{font-size:40px;}
+	.four-form{margin: 5px 6%;}
+	.four-form p{font-size: 14px;}
+	.form-text{width: 80%;font-size: 14px; }
+}
+
+/*  页脚  */
+nav#footer-menu ul li img {
+    width: 2em;
+    height: 2em;
+    border-radius: 2em;
+    margin-right: .6em;
+}
+nav#footer-menu ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    margin: 3em 0 1em;
+}
+nav#footer-menu ul li {
+    margin: .8em;
+}
+nav#footer-menu ul li a {
+    display: inline-flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    font-size: .8em;
+}
+nav#footer-menu ul li a span {
+    padding-bottom: 1px;
+    border-bottom: 1px solid transparent;
+}
+nav#footer-menu ul li a span:hover {
+    border-bottom: 1px solid lightseagreen;
+}
+/* footer */
+footer#footer address {
+    text-align: center;
+    font-style: normal;
+    font-size: .8em;
+    line-height: 1.5em;
+    margin: 1em 0 3em;
+}
+footer#footer address p {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1.2em;
+}
+footer#footer address p img {
+    margin-right: .6em;
+}
+footer#footer div#footer-bottom {
+    background-image: url("../img/index-bottom.png");
+    background-size: cover;
+    width: 100%;
+    height: 6.5em;
+}
+@media only screen and (max-width: 768px) {
+    footer#footer address p {
+        display: flex;
+        margin: 1.5em;
+    }
+    
+      nav#footer-menu ul li a span {
+        display: none;
+    }
+    nav#footer-menu ul li img {
+        width: 2.5em;
+        height: 2.5em;
+    }
+
+}

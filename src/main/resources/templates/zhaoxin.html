@@ -1,0 +1,206 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="save" content="history"/>
+    <meta name="viewport" content="width =device-width, initial-scale=1, maximum-scale=1"/>
+    <title>翼灵招新 - 翼灵物联工作室</title>
+    <link rel="stylesheet" href="css/yiling.css" type="text/css"/>
+    <link rel="stylesheet" href="css/zhizhu.css" type="text/css"/>
+    <link rel="short icon" type="image/x-icon" href="img/tubiao.jpg"/>
+    <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+    <!--<script src="js/yanz.js" type="javascript"></script>-->
+    <style type="text/css">
+        body {
+            background: white;
+            font-family: "微软雅黑";
+        }
+
+    </style>
+
+</head>
+<body>
+<iframe class="ifcss" id="if" src="css/zhizhudong.html" style="height: 250px; width: 100%;" scrolling="no"
+        frameborder="0"></iframe>
+<div id="last-top"> Join
+Us</div>
+<nav>
+    <ul class="navigation">
+        <li class="li" style="padding: 0 8px;"><a href="#"> 首页</a></li>
+        <li class="li"><a href="#second"> 团队简介</a></li>
+        <li class="li"><a href="#three"> 培养方向</a></li>
+        <li class="li" style="border-right: 1px solid aquamarine;;"><a href="#four"> 报名表</a></li>
+    </ul>
+</nav>
+<section id="second " style="background: #f9f9f9;">
+    <div class="second-all">
+        <img class="img" src="img/背景3.jpg" />
+        <div class=" content"><p class="content-p"><span class="content-span">翼</span>灵工作室成立于2013年，隶属于物联网
+            工程教研室，是一个集学生创新与项目实战与一体的科学性实验室。团队由留美教师梁宗文为指导老师。目前团队以探索物联网前沿
+            科技为主导，形成嵌入式开发、移动端开发、web前端开发、服务器后端开发四大完整培养模型，以科研竞赛与外包项目实战为团队主
+            导工作。团队各项成果丰硕，2年内承包外包项目6项，科研竞赛获省级以上奖项11项、国家级奖项7项。</p>
+            <p class="content-p">
+                <span class="content-span">团</span>队目标：团队致力于培养出IT行业精英人才，促使团队成员以明确的目标方向来规划大学生活，用键盘敲出一条互联网企业骨干道路，用代码堆积出属于程序员的人手高度。
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="three">
+    <div class="three-all">
+        <div class="three-div" id="one">
+            <a href="http://www.swpuiot.com/嵌入式.html" target="_blank">
+                <i class="iconfont">&#xe68d;</i>
+                <h2>嵌入式开发</h2>
+                <p class="three-p">底层嵌入式开发、智能硬件的学习</p>
+            </a>
+        </div>
+        <div class="three-div">
+            <a href="http://www.swpuiot.com/安卓组.html" target="_blank">
+                <i class="iconfont">&#xe69a;</i>
+                <h2>Android开发</h2>
+                <p class="three-p">Android开发、技术交流、问题解决</p>
+            </a>
+        </div>
+        <div class="three-div">
+            <a href="http://www.swpuiot.com/后端组.html" target="_blank">
+                <i class="iconfont">&#xe6df;</i>
+                <h2>web开发</h2>
+                <p class="three-p">讨论Web开发、技术上交流，技术研讨</p>
+            </a>
+        </div>
+        <div class="three-div">
+            <a href="http://www.swpuiot.com/前端组.html" target="_blank">
+                <i class="iconfont">&#xe693;</i>
+                <h2>web前端</h2>
+                <p class="three-p">以网页实战技能为基础，紧跟时代脚步</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="four" style="background: #f9f9f9;">
+
+    <div class="tishi">
+        <p>团队招新时间为每年的秋季开学（具体时间待定），在非招新时间段填写报名表，没有效哦!</p>
+    </div>
+    <div class="four-all">
+        <div class="four-form">
+            <p style="margin-bottom: 10px;">如果你有兴趣，如果你想学习更多的知识，那就来加入我们吧！</p>
+            <form id="theForm" th:action="@{/join}">
+                姓名</br>
+                <!--onblur="isString(this.value)"-->
+                <input id="name" name="name" class="form-text" type="text"/></br>
+                <div id="test">
+
+                </div>
+                电话</br>
+                <!--onblur="isTelephone(this.value)"-->
+                <input id="tel" name="tel" class="form-text" type="text" maxlength="11"/></br>
+                专业</br>
+                <div id="telId"></div>
+                <select class="form-text" name="profession">
+                    <option>计科</option>
+                    <option>软工</option>
+                    <option>物联网</option>
+                    <option>网工</option>
+                    <!--<option>5</option> -->
+                </select>
+                性别
+                <input name="sex" value="男" type="radio" checked="checked"/>男
+                <input name="sex" value="女" type="radio"/>女
+                </br>
+                邮箱<br>
+                <input name="email" id="email" class="form-text" type="text"></br>
+                自我简述(100字以内)</br>
+                <textarea id="discrible" name="text" class="form-text" rows="3" style="height: 100px;"></textarea>
+                </br>
+                <input id="button" class="form-text" type="button" onclick="validata()" name="botton" value="提交"/>
+            </form>
+        </div>
+        <div>
+            <img class="two-img" src="img/bd1.png"/>
+        </div>
+    </div>
+</section>
+
+<nav id="footer-menu">
+    <ul>
+        <li><a href="https://www.swpuiot.com"><img src="img/logo.png" alt="首页"><span>首页</span></a></li>
+        <li>
+            <a href="https://github.com/" target="_blank">
+                <img src="img/icon-github.png" alt="GitHub"/><span>GitHub</span>
+            </a>
+        </li>
+        <!--<li>-->
+        <!--<a href="index-blog.html" target="_blank">-->
+        <!--<img src="img/index-about2.png" alt="博客系统"/><span>博客系统</span>-->
+        <!--</a>-->
+        <!--</li>-->
+        <li>
+            <a href="http://www.swpu.edu.cn/" target="_blank">
+                <img src="img/icon-swpu.jpg" alt="西南石油大学门户网站"/><span>西南石油大学门户网站</span>
+            </a>
+        </li>
+        <li>
+            <a href="http://scs.swpu.edu.cn/" target="_blank">
+                <img src="img/icon-swpuc.png" alt="西南石油大学计算机科学学院"/><span>西南石油大学计算机科学学院</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+<footer id="footer">
+    <address>
+        <p><img src="img/icon-phone.png"/>18280435703</p>
+        <p><img src="img/icon-map.png"/>西南石油大学（新都）·明理楼C1011</p>
+        <p>&copy; 2017 翼灵物联工作室</p>
+    </address>
+    <div id="footer-bottom"></div>
+</footer>
+<script>
+
+    function validata() {
+        var name = document.getElementById("name").value;
+        var tel = document.getElementById("tel").value;
+        var email = document.getElementById("email").value;
+        if (name == "") {
+            alert("请输入名字");
+            return false;
+        }
+
+        if (tel == "") {
+            alert("请输入电话号码");
+            return false
+        }
+        if (!isTelephone(tel)) {
+            alert("请输入正确的手机号码");
+            return false;
+        }
+        if (email == "") {
+            alert("请输入邮箱");
+            return false;
+        }
+        if (!isEmail(email)) {
+            alert("请输入正确邮箱");
+            return false
+        }
+        else {
+            var form1 = document.getElementById("theForm");
+            form1.submit();
+        }
+    }
+
+
+    function isEmail(obj) {
+        var emailReg = /\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/;
+        return emailReg.test(obj);
+    }
+
+    function isTelephone(obj) {
+        reg = /^1[34578]\d{9}$/;
+        return reg.test(obj);
+    }
+
+
+</script>
+</body>
+</html>
